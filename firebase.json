@@ -1,0 +1,14 @@
+{
+  "functions": { "source": ".output/server" },
+  "hosting": {
+    "site": "nuxt3-todo-list",
+    "public": "public",
+    "cleanUrls": true,
+    "rewrites": [{ "source":  "**", "function": "server" }],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
